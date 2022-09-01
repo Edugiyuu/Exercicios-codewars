@@ -26,5 +26,5 @@ function makeNegative(num) {
     }
   }
 
-  var nome = makeNegative(0)
+  var nome = makeNegative(10)
   console.log(nome);

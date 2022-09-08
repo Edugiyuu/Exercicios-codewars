@@ -3,7 +3,7 @@
 //Output :: "One".
 //If your language supports it, try using a switch statement.
 
-function switchItUp(number) {
+/* function switchItUp(number) {
   switch (number) {
     case 0:
       return "Zero";
@@ -36,6 +36,20 @@ function switchItUp(number) {
       return "Nine";
       break;
   }
-}
+} */
+// refactor
 
-    console.log (switchItUp(3))
+const switchItUp = (number) =>
+  [
+    "Zero",
+    "One",
+    "Two",
+    "Three",
+    "Four",
+    "Five",
+    "Six",
+    "Seven",
+    "Eight",
+    "Nine",
+  ][number];
+console.log(switchItUp(3));

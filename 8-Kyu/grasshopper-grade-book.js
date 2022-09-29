@@ -11,21 +11,22 @@ Tested values are all between 0 and 100. Theres is no need to check for negative
  */
 
 function getGrade (s1, s2, s3) {
-    var resultado = s1 + s2 + s3
-    
-    if (0 < 60){
-      return "F"
-      }
-    if (60 < 70){
-        return "D"
-      }
-    if (70 < 80){
-      return "C"
-      }
-    if (80 < 90){
-      return "B"
-      }
-    if (90 < 100){
-      return "A"
-      }
-  }
+  var media = (s1 + s2 + s3) / 3
+  
+  if (media >= 0 && media <= 60){
+    return "F"
+    }
+  if (media >= 60 && media < 70){
+      return "D"
+    }
+  if (media >= 70 && media < 80){
+    return "C"
+    }
+  if (media >= 80 && media <= 90){
+    return "B"
+    }
+  if (media >= 90 && media <= 100){
+    return "A"
+    }
+}
+console.log(getGrade(40,80,90))

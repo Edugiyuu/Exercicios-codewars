@@ -7,13 +7,8 @@ name equals owner	'Hello boss'
 otherwise	'Hello guest' */
 
 function greet (name, owner) {
-    switch (name, owner){
-      case name,owner:
-      if (name == owner){
-      return "Hello boss"
-        } else {
-          return "Hello guest"
-        }
-      }
+   return name == owner ? "Hello boss" : "Hello guest"
   }
-  
+
+  console.log(greet("Edu","Edu"));
+  console.log(greet("Edu","Pedro"));

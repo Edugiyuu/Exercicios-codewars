@@ -11,3 +11,24 @@ Example: (input --> output)
 
 "ATTGC" --> "TAACG"
 "GTAT" --> "CATA" */
+
+function DNAStrand(dna){
+    var final = '';
+    for (let i=0; i < dna.length; i++) {
+      if (dna[i] == 'A'){
+        final += 'T'
+
+      } else if(dna[i] == 'T'){
+        final += 'A'
+
+      }else if (dna[i] == 'G'){
+        final += 'C'
+
+      }else if (dna[i] == 'C'){
+        final += 'G'
+        
+      }
+      }
+    return final
+  }
+console.log(DNAStrand('AATGC'))

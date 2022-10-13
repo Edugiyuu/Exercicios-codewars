@@ -12,7 +12,7 @@ Example: (input --> output)
 "ATTGC" --> "TAACG"
 "GTAT" --> "CATA" */
 
-function DNAStrand(dna){
+/* function DNAStrand(dna){
     var final = '';
     for (let i=0; i < dna.length; i++) {
       if (dna[i] == 'A'){
@@ -31,4 +31,54 @@ function DNAStrand(dna){
       }
     return final
   }
-console.log(DNAStrand('AATGC'))
+console.log(DNAStrand('AATGC')) */
+
+
+/* PRIMEIRA TENTATIVA USANDO SWITCH
+function DNAStrand(dna){
+    let final = ''
+    for (let i=0; i < dna.length;i++)
+    switch (dna[i]){
+        case 'A':
+                final += 'T';
+            
+        case 'T':
+                final += 'A';
+            
+        case 'G':
+                final += 'C';
+                
+        case 'C':
+            final += 'G';
+            
+    }
+    return final
+} */
+
+function DNAStrand(dna){
+    let final = ''
+    for (let i=0; i < dna.length;i++)
+    switch (dna[i]){
+        case 'A':
+        if(dna[i] == 'A'){
+            final += 'T'; 
+        }
+        case 'T':
+            if(dna[i] == 'T'){
+                final += 'A'; 
+            }
+          
+        case 'G':
+            if(dna[i] == 'G'){
+                final += 'C'; 
+            }
+             
+        case 'C':
+            if(dna[i] == 'C'){
+                final += 'G'; 
+            }
+    }
+    return final
+}
+
+console.log(DNAStrand('AATCGATC'))

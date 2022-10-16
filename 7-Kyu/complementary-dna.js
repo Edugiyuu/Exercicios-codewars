@@ -33,7 +33,6 @@ Example: (input --> output)
   }
 console.log(DNAStrand('AATGC')) */
 
-
 /* PRIMEIRA TENTATIVA USANDO SWITCH
 function DNAStrand(dna){
     let final = ''
@@ -55,30 +54,36 @@ function DNAStrand(dna){
     return final
 } */
 
-function DNAStrand(dna){
-    let final = ''
-    for (let i=0; i < dna.length;i++)
-    switch (dna[i]){
-        case 'A':
-        if(dna[i] == 'A'){
-            final += 'T'; 
-        }
-        case 'T':
-            if(dna[i] == 'T'){
-                final += 'A'; 
-            }
-          
-        case 'G':
-            if(dna[i] == 'G'){
-                final += 'C'; 
-            }
-             
-        case 'C':
-            if(dna[i] == 'C'){
-                final += 'G'; 
-            }
+function DNAStrand(dna) {
+  let final = "";
+  for (let i = 0; i < dna.length; i++) {
+    switch (dna[i]) {
+      case "A":
+        final += "T";
+        break;
+      case "T":
+        final += "A";
+        break;
+      case "G":
+        final += "C";
+        break;
+      case "C":
+        final += "G";
+        break;
     }
-    return final
+  }
+  return final;
 }
 
-console.log(DNAStrand('AATCGATC'))
+console.log(DNAStrand("AATCGATC"));
+
+let sequência = { 
+  A: "T", 
+  T: "A", 
+  G: "C", 
+  C: "G" 
+}
+
+console.log(sequência.C)
+console.log(sequência['G'])
+

@@ -9,7 +9,7 @@ console.log(valoresnovos);
 //Segundo passo verificar o valor da posição do array
 //Terceiro passo retornar o valor da posição do array
 function filter_list(l) {
-  return l.map(valorDaPosicao => isNaN (valorDaPosicao) ? null: valorDaPosicao
+  return l.filter(valorDaPosicao => isNaN (valorDaPosicao) ? null: valorDaPosicao
       
     )
   }

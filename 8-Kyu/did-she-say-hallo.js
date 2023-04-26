@@ -17,3 +17,34 @@ Notes
 you can assume the input is a string.
 to keep this a beginner exercise you don't need to check if the greeting is a subset of word (Hallowen can pass the test)
 function should be case insensitive to pass the tests */
+
+
+/* function validateHello(greetings) {
+    return ['hello','ciao','salut','hallo','hola','ahoj','czesc'].indexOf(greetings) === -1 ? false : true
+    
+  }
+console.log(validateHello('hola')); */
+
+/* function validateHello(greetings) {
+    const olas = ['hello','ciao','salut','hallo','hola','ahoj','czesc']
+    return olas.find(element => element == greetings) === undefined ? false : true
+  }
+console.log(validateHello('hola'));  */
+
+/* function validateHello(greetings) {
+    const olas = ['hello','ciao','salut','hallo','hola','ahoj','czesc']
+    const teste = olas.find(element => element == greetings)
+
+    if (teste == undefined) {
+        return false
+    }else{
+        return true
+    }
+  }
+console.log(validateHello('hola')); */
+
+function validateHello(greetings) {
+    const olas = ['hello','ciao','salut','hallo','hola','ahoj','czesc']
+        return olas.includes(greetings)
+    }
+console.log(validateHello('hola'));

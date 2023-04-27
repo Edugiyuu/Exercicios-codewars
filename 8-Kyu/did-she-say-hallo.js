@@ -44,7 +44,7 @@ console.log(validateHello('hola'));  */
 console.log(validateHello('hola')); */
 
 function validateHello(greetings) {
-    const olas = ['hello','ciao','salut','hallo','hola','ahoj','czesc']
-        return olas.includes(greetings)
+    const olas = ['hello','ciao','salut','hallo','hola','ahoj','czesc'].includes(greetings)
+        return olas
     }
 console.log(validateHello('hola'));

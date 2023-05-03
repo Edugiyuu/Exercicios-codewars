@@ -9,7 +9,7 @@ Examples
 [17, 17, 3, 17, 17, 17, 17] ==> 3
  */
 
-/* function stray(numbers) {
+ function stray(numbers) {
     for (var i = 0; i < numbers.length; i++) {
       if (numbers[i] !== numbers[i + 1]) {
         return numbers[i + 1];
@@ -19,10 +19,10 @@ Examples
     }
   }
 
-console.log(stray([10,10,10,10,5,10,10])); */
+console.log(stray([2, 1, 1])); 
 
 //-----------------------------------------------------
-
+/* 
 function stray(numbers) {
     numbers.sort();
       if (numbers[0] !== numbers[1]) {
@@ -32,4 +32,4 @@ function stray(numbers) {
       }
   }
 
-console.log(stray([11,11,11,11,10,11,11]));
+console.log(stray([11,11,11,11,5,11,11])); */

@@ -10,7 +10,7 @@ vowelOne( "abceios" ) // "1001110"
 
 vowelOne( "aeiou, abc" ) // "1111100100" */
 
-function vowelOne(s){
+/* function vowelOne(s){
     let stringDeNumeros = []
     var stringMinuscula = s.toLowerCase()
     for(var i = 0; i < stringMinuscula.length;i++){
@@ -31,4 +31,21 @@ function vowelOne(s){
     return stringDeNumeros.toString().replace(/,/g,'')
   }
 
+  console.log(vowelOne('Uma STringG')); */
+
+  function vowelOne(s){
+    let stringDeNumeros = []
+    let vogais = ['a','e','i','o','u']
+    var stringMinuscula = s.toLowerCase()
+
+    for(var i = 0; i < stringMinuscula.length;i++){
+      let existe = vogais.find(letra => letra == stringMinuscula[i])
+      console.log(existe);
+      existe ? stringDeNumeros.push('1') : stringDeNumeros.push('0')
+      
+    }
+    return stringDeNumeros.toString().replace(/,/g,'')
+  }
+
   console.log(vowelOne('Uma STringG'));
+

@@ -18,7 +18,7 @@ function maskify(str) {
       return str;
     } else {
       let stringCensurada = "";
-      for (let i = 0; i < str.length - 4; i++) {
+      for (var i = 0; i < str.length - 4; i++) {
         stringCensurada += "#";
       }
       stringCensurada += str.substring(str.length - 4);
